@@ -146,7 +146,7 @@ function meow500() {
         ErrorResponse.innerHTML += `<span class="text-light text-center rounded-3" style="font-size: 30px;">error code::${this.status} <br> ${this.responseText}</span>`;
         Swal.fire({
           title: "Internal Server Error",
-          text: "از صبر و شکیبایی شما سپاسگرازیم❤",
+          text: "❤از صبر و شکیبایی شما سپاسگرازیم",
           imageUrl: "docs/myFriend.jpg",
           imageWidth: 400,
           imageHeight: 400,
