@@ -46,7 +46,7 @@ function meow200() {
 function meow201() {
   const xhr = new XMLHttpRequest();
 
-  xhr.open("post", "https://jsonplaceholder.typicode.com/posts/", true);
+  xhr.open("POST", "https://jsonplaceholder.typicode.com/posts/", true);
 
   xhr.onreadystatechange = function meow201huh() {
     console.log(this);
@@ -55,7 +55,7 @@ function meow201() {
     if (this.readyState === XMLHttpRequest.DONE) {
       if (this.status === 201) {
         console.log("done", this.status, this.responseText);
-        ErrorResponse.innerHTML += `<span class="text-light text-center rounded-3" style="font-size: 30px;">error code::${this.status}</span>`;
+        ErrorResponse.innerHTML += `<span class="text-light text-center rounded-3" style="font-size: 30px;">error code::${this.status}<br>the HTTP request has led to the creation of a resource</span>`;
         Swal.fire({
           title: "Created!",
           icon: "success",
@@ -71,7 +71,6 @@ function meow201() {
 }
 
 function meow300() {
-  console.log("popopopopopopo");
   const xhr = new XMLHttpRequest();
 
   xhr.open("GET", "https://httpstat.us/300", true);
